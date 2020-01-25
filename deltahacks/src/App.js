@@ -2,6 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Planets
+// Math for kids
+// chat
+// 
+
 function App() {
   return (
     <div className="App">
