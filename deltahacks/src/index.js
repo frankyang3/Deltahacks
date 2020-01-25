@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** Replace these with your own API keys, username and roomId from Chatkit  */
 const testToken = "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/dfaf1e22-2d33-45c9-b4f8-31f634621d24/token"
 const instanceLocator = "v1:us1:dfaf1e22-2d33-45c9-b4f8-31f634621d24"
@@ -123,32 +124,13 @@ class SendMessageForm extends React.Component {
 function Title() {
   return <p className="title">My awesome chat app</p>
 }
+=======
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+>>>>>>> a1b6589ff55c57c5a7d8d90b2394be3dc52e553c
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+registerServiceWorker();
