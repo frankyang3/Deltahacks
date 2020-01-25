@@ -4,6 +4,10 @@ const instanceLocator = "v1:us1:dfaf1e22-2d33-45c9-b4f8-31f634621d24"
 const roomId = 9806194
 const username = 'perborgen'
 
+import React from 'react'
+import ReactDOM from 'react-dom'
+i
+
 class App extends React.Component {
     constructor() {
         super()
