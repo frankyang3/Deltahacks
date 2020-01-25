@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import ChatMessage from './Components/ChatMessage';
 import Signup from './Components/Signup';
 import ChatApp from './Components/ChatApp';
 
@@ -56,9 +55,7 @@ class App extends Component {
   render() {
     let view = '';
 
-    if (this.state.currentView === "ChatMessage") {
-      view = <ChatMessage changeView={this.changeView} />
-    } else if (this.state.currentView === "signup") {
+    if (this.state.currentView === "signup") {
       view = <Signup onSubmit={this.createUser} />
     } else if (this.state.currentView === "chatApp") {
       view = <ChatApp currentId={this.state.currentId} />
