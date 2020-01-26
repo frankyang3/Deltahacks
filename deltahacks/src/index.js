@@ -6,9 +6,10 @@ import Background from './Background';
 import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 
+ReactDOM.render(<App />, document.getElementById('root'));
+
 ReactDOM.render(<Background />, document.getElementById('background'));
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
 
 registerServiceWorker();
