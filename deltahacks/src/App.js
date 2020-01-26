@@ -6,7 +6,7 @@ import Background from './Background.js';
 
 import { default as Chatkit } from '@pusher/chatkit-server';
 
-const quotes = ["abc","123","asd",];
+const quotes = ["sdf","123","asd"];
 
 const chatkit = new Chatkit({
   instanceLocator: "v1:us1:906ae81f-e261-4e28-a44e-500e240028b7",
@@ -29,7 +29,6 @@ class App extends Component {
     this.generateRandomIndex = this.generateRandomIndex.bind(this);
   }
   createUser(username, rmId) {
-    console.log(rmId)
     this.setState({room: rmId})
     chatkit.createUser({
       id: username,
@@ -63,7 +62,6 @@ class App extends Component {
   generateRandomIndex(){
     this.setState({
       quote: quotes[Math.floor(Math.random()*quotes.length)] });
-      console.log(this.state.quote)
   
   }
 
