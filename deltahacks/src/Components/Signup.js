@@ -33,7 +33,7 @@ class Signup extends Component {
                         <input type="checkbox" name="rmId" onChange={this.handleChange} value = "0f82ea89-b85f-44cc-aac8-069e3c3c885f" /> Room 1
                         <input type="checkbox" name="rmId" onChange={this.handleChange} value = "4ff19752-6fa4-4abe-a55c-a18c0f4cc5ca" /> Room 2 
                         <input type="checkbox" name="rmId" onChange={this.handleChange} value = "9b93b260-861b-4f86-b2e0-fe4abc70e2bc" /> Room 3 
-                        <input type="checkbox" name="rmId" onChange={this.handleChange} value = "f228987c-dcdc-4e62-8de1-064c074a5cd8" /> Room 4 <br/> <br/>   
+                        <input type="checkbox" name="rmId" onChange={this.handleChange} value = "f228987c-dcdc-4e62-8de1-064c074a5cd8" /> Room 4 <br/>    
                         <button className="submit">Submit</button>
                     </form>
                 </div>
