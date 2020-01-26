@@ -4,6 +4,7 @@ class MessageList extends Component {
     render() {
         return (
             <ul className="message-list">
+                <li className = "dateText" >ROOM ID: {this.props.roomId} </li>
                 {this.props.messages.map((message, index) => (
                     <li key={index}>
                         <h4 className="message-sender">{message.senderId}</h4>

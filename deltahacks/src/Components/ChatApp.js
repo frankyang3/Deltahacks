@@ -10,11 +10,11 @@ class ChatApp extends Component {
             currentUser: null,
             currentRoom: { users: [] },
             messages: [],
-            users: []
+            users: [],
         }
         this.addMessage = this.addMessage.bind(this);
     }
-
+    
     componentDidMount() {
         const chatManager = new ChatManager({
             instanceLocator: "v1:us1:906ae81f-e261-4e28-a44e-500e240028b7",
@@ -28,9 +28,8 @@ class ChatApp extends Component {
             .connect()
             .then(currentUser => {
                 this.setState({ currentUser: currentUser })
-
                 return currentUser.subscribeToRoom({
-                    roomId: "0f82ea89-b85f-44cc-aac8-069e3c3c885f",
+                    roomId: this.props.rmId,
                     messageLimit: 5,
                     hooks: {
                         onMessage: message => {
@@ -64,7 +63,7 @@ class ChatApp extends Component {
         return (
             <div>
                 <h2 className="header">Just Chat</h2>
-                <MessageList messages={this.state.messages} />
+                <MessageList roomId={this.props.rmId} messages={this.state.messages} />
                 <Input className="input-field" onSubmit={this.addMessage} />
             </div>
         )
