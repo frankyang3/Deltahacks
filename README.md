@@ -1,8 +1,10 @@
-# DeltHacks
+# DeltaHacks
 
-built with tutorial from pusher@ chatkit
-'
-please run 
+
+
+built with chatKit on DeltaHacks
+
+please install before running
 
 npm install @pusher/chatkit-client
 
