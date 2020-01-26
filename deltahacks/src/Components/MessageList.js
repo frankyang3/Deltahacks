@@ -7,7 +7,7 @@ class MessageList extends Component {
                 {this.props.messages.map((message, index) => (
                     <li key={index}>
                         <h4 className="message-sender">{message.senderId}</h4>
-                        <h5>{message.createdAt.substring(0,10)} {message.createdAt.substring(11,16)}</h5>
+                        <h5 className="dateText">{message.createdAt.substring(0,10)} {message.createdAt.substring(11,16)}</h5>
                         <p className="message-text">{message.text}</p>
                     </li>
                 ))}

@@ -10,6 +10,11 @@ label{
   color: white;
 }
 
+.dateText{
+  font-family: "Comic Sans MS";
+  font-size: 14px;
+  color: rgb(85, 95, 206);
+}
 .chat-button {
   position: absolute;
   right: 10px;
@@ -120,9 +125,9 @@ label{
 }
 
 .message-sender  {
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 20px;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Comic Sans MS';
   margin: 0;
   color: white;
 }
@@ -130,7 +135,10 @@ label{
 .message-text  {
   margin-bottom: 30px;
   margin-top: 4px;
-  color: white;
+  color: greenyellow;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Comic Sans MS";
 }
 
 .message-input  {
@@ -139,7 +147,8 @@ label{
   border: 0;
   border-top: 1px solid #e0e0e0;
   font-size: 18px;
-  padding-left: 2px
+  padding-left: 2px;
+  font-family: "Comic Sans MS";
 }
 
 .message-submit  {
