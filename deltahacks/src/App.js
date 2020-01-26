@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import Signup from './Components/Signup';
 import ChatApp from './Components/ChatApp';
@@ -22,13 +21,19 @@ class App extends Component {
       currentUsername: '',
       currentId: '',
       currentView: 'signup',
+<<<<<<< HEAD
       quote: quotes[0]
+=======
+      room: ""
+>>>>>>> a3d465018838ca2da94dbcb9ab40bf23e551a431
     }
     this.changeView = this.changeView.bind(this);
     this.createUser = this.createUser.bind(this);
     this.generateRandomIndex = this.generateRandomIndex.bind(this);
   }
-  createUser(username) {
+  createUser(username, rmId) {
+    console.log(rmId)
+    this.setState({room: rmId})
     chatkit.createUser({
       id: username,
       name: username,
@@ -72,7 +77,7 @@ class App extends Component {
     if (this.state.currentView === "signup") {
       view = <Signup onSubmit={this.createUser} />
     } else if (this.state.currentView === "chatApp") {
-      view = <ChatApp currentId={this.state.currentId} />
+      view = <ChatApp rmId = {this.state.room} currentId={this.state.currentId} />
     }
     return (
       <div>
