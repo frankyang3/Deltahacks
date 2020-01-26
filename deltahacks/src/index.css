@@ -10,6 +10,14 @@ label{
   color: white;
 }
 
+h9 {
+  font-family: "Comic Sans MS";
+  color: white;
+  margin-right: 56px;
+  margin-left: 10px
+
+}
+
 .dateText{
   font-family: "Comic Sans MS";
   font-size: 14px;
@@ -31,7 +39,7 @@ label{
 }
 
 .form-container {
-  height: 400px;
+  height: 350px;
   border: 2px solid #5E0565;
 }
 .form-container h1 {
@@ -60,11 +68,13 @@ label{
 
 .submit  {
   height: 40px;
-  padding: 0 20px;
+  right: 50%;
   background-color: #5E0565;
   color: white;
   border-radius: 5px;
   font-size: 16px;
+  margin-top:30px;
+  
   cursor: pointer;
 }
 

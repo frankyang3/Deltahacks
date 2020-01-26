@@ -6,7 +6,7 @@ import Background from './Background.js';
 
 import { default as Chatkit } from '@pusher/chatkit-server';
 
-const quotes = ["sdf","123","asd"];
+const quotes = ["Only a life lived for others is a life worthwhile","The biggest adventure you can take is to live the life of your dreams","asd"];
 
 const chatkit = new Chatkit({
   instanceLocator: "v1:us1:906ae81f-e261-4e28-a44e-500e240028b7",
@@ -78,7 +78,7 @@ class App extends Component {
       <div>
         <Background />
         <span className="quotes">{this.state.quote}</span>
-        <button className="generateButton" onClick={this.generateRandomIndex}>Submit</button>
+        <button className="generateButton" onClick={this.generateRandomIndex}>Quote</button>
         <div className="App">
             {view}
         </div>
