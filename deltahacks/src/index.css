@@ -141,6 +141,39 @@ label{
   font-family: "Comic Sans MS";
 }
 
+.generateButton{
+  position:fixed;
+  left: 50%;
+  top: 30%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300px;
+  z-index: 1;
+  border: 2px solid grey;
+  font-size: 30px;
+  font-family: "Comic Sans MS";
+  border-radius: 20px;
+
+  color:white
+}
+
+.quotes{
+  position:fixed;
+  left: 50%;
+  top: 20%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 1100px;
+  z-index: 1;
+  border: 2px solid grey;
+  font-size: 40px;
+  font-family: "Comic Sans MS";
+  border-radius: 20px;
+
+  color:white
+}
 .message-input  {
   width: 70%;
   height: 50px;

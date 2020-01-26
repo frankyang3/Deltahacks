@@ -7,6 +7,7 @@ import Background from './Background.js';
 
 import { default as Chatkit } from '@pusher/chatkit-server';
 
+const quotes = ["abc","123","asd",];
 
 const chatkit = new Chatkit({
   instanceLocator: "v1:us1:906ae81f-e261-4e28-a44e-500e240028b7",
@@ -20,10 +21,12 @@ class App extends Component {
     this.state = {
       currentUsername: '',
       currentId: '',
-      currentView: 'signup'
+      currentView: 'signup',
+      quote: quotes[0]
     }
     this.changeView = this.changeView.bind(this);
     this.createUser = this.createUser.bind(this);
+    this.generateRandomIndex = this.generateRandomIndex.bind(this);
   }
   createUser(username) {
     chatkit.createUser({
@@ -55,6 +58,13 @@ class App extends Component {
     })
   }
 
+  generateRandomIndex(){
+    this.setState({
+      quote: quotes[Math.floor(Math.random()*quotes.length)] });
+      console.log(this.state.quote)
+  
+  }
+
   render() {
     let view = '';
 
@@ -66,10 +76,14 @@ class App extends Component {
     }
     return (
       <div>
-        <Background  />
+        <Background />
+        <span className="quotes">{this.state.quote}</span>
+        <button className="generateButton" onClick={this.generateRandomIndex}>Submit</button>
         <div className="App">
             {view}
         </div>
+
+        
       </div>
     );
   }
