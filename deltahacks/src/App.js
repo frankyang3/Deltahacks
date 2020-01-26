@@ -2,8 +2,11 @@
 import React, { Component } from 'react';
 import Signup from './Components/Signup';
 import ChatApp from './Components/ChatApp';
+import Background from './Background.js';
+
 
 import { default as Chatkit } from '@pusher/chatkit-server';
+
 
 const chatkit = new Chatkit({
   instanceLocator: "v1:us1:906ae81f-e261-4e28-a44e-500e240028b7",
@@ -62,8 +65,11 @@ class App extends Component {
       view = <ChatApp currentId={this.state.currentId} />
     }
     return (
-      <div className="App">
-        {view}
+      <div>
+        <Background  />
+        <div className="App">
+            {view}
+        </div>
       </div>
     );
   }

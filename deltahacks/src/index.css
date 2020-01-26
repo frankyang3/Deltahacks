@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Dancing Script', cursive;
 }
 
 label{
@@ -121,15 +121,15 @@ label{
 
 .message-sender  {
   font-weight: bold;
-  font-size: 1em;
-  font-family:'Indie Flower';
+  font-size: 20px;
+  font-family: 'Special Elite', cursive;
   margin: 0;
   color: white;
 }
 
 .message-text  {
-  margin-bottom: 20px;
-  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-top: 4px;
   color: white;
 }
 
