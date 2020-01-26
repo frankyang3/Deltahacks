@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import Signup from './Components/Signup';
 import ChatApp from './Components/ChatApp';
-import Background from './Background.js';
-
-
+import Background from './Background.js'; 
 import { default as Chatkit } from '@pusher/chatkit-server';
 
-const quotes = ["Only a life lived for others is a life worthwhile","The biggest adventure you can take is to live the life of your dreams","asd"];
+var quotes = ["Only a life lived for others is a life worthwhile",
+"The biggest adventure you can take is to live the life of your dreams",
+"The only disabsility in life is a bad attitude",
+"Where is my goddamn muffin?!"];
 
 const chatkit = new Chatkit({
   instanceLocator: "v1:us1:906ae81f-e261-4e28-a44e-500e240028b7",
   key: "de0b32fb-8194-42b1-a1d1-c0c176391a88:YZQhoBsydYy9jH/ncFrsLg92t/lR5gO7yfwBRNjshVc="
 })
+
 
 
 class App extends Component {
