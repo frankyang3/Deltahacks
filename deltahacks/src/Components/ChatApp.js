@@ -6,7 +6,7 @@ import MessageList from './MessageList';
 class ChatApp extends Component {
     constructor(props) {
         super(props);
-        this.state = {
+        this.state = { 
             currentUser: null,
             currentRoom: { users: [] },
             messages: [],
@@ -63,7 +63,7 @@ class ChatApp extends Component {
     render() {
         return (
             <div>
-                <h2 className="header">Let's Talk</h2>
+                <h2 className="header">Just Chat</h2>
                 <MessageList messages={this.state.messages} />
                 <Input className="input-field" onSubmit={this.addMessage} />
             </div>
