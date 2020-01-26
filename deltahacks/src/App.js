@@ -21,11 +21,8 @@ class App extends Component {
       currentUsername: '',
       currentId: '',
       currentView: 'signup',
-<<<<<<< HEAD
-      quote: quotes[0]
-=======
+      quote: quotes[0],
       room: ""
->>>>>>> a3d465018838ca2da94dbcb9ab40bf23e551a431
     }
     this.changeView = this.changeView.bind(this);
     this.createUser = this.createUser.bind(this);
