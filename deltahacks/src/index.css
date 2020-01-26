@@ -7,6 +7,7 @@ body {
 
 label{
   font-family: "Comic Sans MS";
+  color: white;
 }
 
 .chat-button {
@@ -123,11 +124,13 @@ label{
   font-size: 1em;
   font-family:'Indie Flower';
   margin: 0;
+  color: white;
 }
 
 .message-text  {
   margin-bottom: 20px;
-  margin-top: 5px
+  margin-top: 5px;
+  color: white;
 }
 
 .message-input  {
